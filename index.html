@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<style>
+    ul{
+        width:100px;
+        padding:40px;
+        display:none;
+        box-shadow: -11px 21px 64px 26px rgba(0,0,0,0.1);
+    }
+    li{
+        list-style-type: none;
+        margin:2px;
+        padding:10px 60px;
+        box-shadow: -11px 21px 64px 26px rgba(0,0,0,0.1);
+    }
+    li:hover{
+        border:2px solid black;
+    }
+    .showmenu{
+        display:block;
+    }
+    #button{
+        padding:10px 30px;
+        
+    }
+</style>
+<body>
+    <button id="button">HOME</button>
+    <ul id="ul">
+        <li>hi hello</li>
+           <li>hi hello</li>
+              <li>hi hello</li>
+                 <li>hi hello</li>
+                    <li>hi hello</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+$("#button").click(function(){
+    $("#ul").toggleClass("showmenu")
+})
+        })
+    </script>
+
+</body>
+</html>
